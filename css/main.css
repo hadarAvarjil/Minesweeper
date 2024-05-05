@@ -1,0 +1,170 @@
+body {
+    background-image: url('/img/garden4.jpg');
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: Copperplate, Papyrus, fantasy;
+    text-align: justify;
+}
+
+
+.board-container {
+    
+    margin-left: 20vw;
+    margin-top: 25px;
+    border: 3px solid antiquewhite;;
+}
+
+.board td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: 900;
+    color: #f6f7f6;
+
+    padding: 2.5px;
+    cursor: pointer;
+
+    border: 2.5px inset rgba(12, 19, 10, 0.377);
+    
+
+}
+
+
+
+.uncover {
+    background-color: rgb(116, 114, 111);
+}
+
+.uncover-mine {
+    background-color: rgb(235, 57, 13);
+}
+
+
+
+footer {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    padding: 5px;
+    background-color: rgba(176, 196, 222, 0.467);
+
+    font-size: 20px;
+    text-align: center;
+
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.img {
+    height: 20px;
+}
+
+.btn {
+    align-items: center;
+
+    border-radius: 42px;
+    border-width: 0;
+
+    color: #277408;
+    background-color: antiquewhite;
+    cursor: pointer;
+
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 18px;
+
+    letter-spacing: .04em;
+    line-height: 16px;
+
+    margin: 10;
+    padding: 10px 10px;
+
+    font-weight: 1000;
+
+    bottom: 800px;
+
+    
+
+}
+
+h1 {
+    color: antiquewhite;
+    font-family: Copperplate, Papyrus, fantasy;
+    text-align: center;
+    padding: 2px;
+}
+
+
+h3 {
+    color: antiquewhite;
+    font-family: Copperplate, Papyrus, fantasy;
+    padding: 2px;
+
+    font-weight: 900;
+}
+
+.restart {
+
+    border-radius: 42px;
+    border-width: 0;
+
+    color: #277408;
+    background-color: antiquewhite;
+    cursor: pointer;
+
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 18px;
+
+    letter-spacing: .04em;
+    line-height: 16px;
+
+    padding: 5px 5px;
+
+    font-weight: 1000;
+
+    position: absolute;
+    top: 16%;
+    left: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+}
+
+.img-btn {
+    height: 80px; 
+}
+
+.life1 {
+    height: 70px; 
+    position: absolute;
+    top: 13.5%;
+    left: 410px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.life2 {
+    height: 70px; 
+    position: absolute;
+    top: 13.5%;
+    left: 470px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.life3 {
+    height: 70px; 
+    position: absolute;
+    top: 13.5%;
+    left: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}

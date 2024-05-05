@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body onload="onInit()">
+    <h1>Minesweeper</h1>
+    <div class="gameOption">
+        <h3>Game Level: Medium</h3>
+        <button class="btn" data-btn-size="4" onclick="gameLevel(this)">Beginner</button>
+        <button class="btn" data-btn-size="8" onclick="gameLevel(this)">Medium</button>
+        <button class="btn" data-btn-size="12" onclick="gameLevel(this)">Expert</button>
+    </div>
+
+    <div class="life">
+        <img src="img/life.png" class="life1">
+        <img src="img/life.png" class="life2">
+        <img src="img/life.png" class="life3">
+    </div>
+
+    <button onclick="onInit()" class="restart">
+        <img src="img/Normal.png" class="img-btn">
+    </button>
+
+
+    <table class="board-container">
+        <tbody class="board"></tbody>
+    </table>
+
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/mines.js"></script>
+
+
+</body>
+<footer>Hadar Avarjil</footer>
+
+
+</html>
