@@ -1,7 +1,5 @@
 'use strict'
 
-var gBoard
-
 const MINE = '<img src="img/poop.png" class="img">'
 const FLAG = '<img src="img/flag.png" class="img">'
 
@@ -11,17 +9,19 @@ const NORMAL = 'img/normal.png'
 
 var gLevel = {
     SIZE: 8,
-    MINES: 14
+    MINES: 14,
+    HIDDEN_MINES: 14,
 }
 
+var gBoard
 var gGame
-
+var gTimer
 var gMinesLocation
-
-// gIsfirstClicked =
+var gIsfirstClicked = false
 
 
 function onInit() {
+
     getRestartImage(NORMAL)
 
     gGame = {
@@ -31,6 +31,10 @@ function onInit() {
         secsPassed: 0,
         life: 3,
     }
+
+    clearInterval(gTimer)
+    gIsfirstClicked = false
+    document.querySelector('h2').innerText = `Time: ${0}s`
 
     lifeElmDisplayReturn()
 
@@ -71,7 +75,6 @@ function renderBoard(board) {
         strHTML += '<tr>'
         for (var j = 0; j < board[i].length; j++) {
 
-            const cell = board[i][j]
             var cellClass = getClassName({ i, j })
             // const className = cell.isShown ? 'uncover' : 'cover'
 
@@ -92,8 +95,6 @@ function renderCell(location, value) {
     elCell.innerHTML = value
 }
 
-
-
 function onCellClicked(elCell, rowIdx, colIdx) {
 
     if (!gBoard[rowIdx][colIdx]) return
@@ -103,6 +104,7 @@ function onCellClicked(elCell, rowIdx, colIdx) {
     if (gBoard[rowIdx][colIdx].isMine) {
         elCell.innerHTML = MINE
         elCell.classList.add('uncover')
+        gLevel.HIDDEN_MINES--
 
         if (!gGame.life) {
             gGame.isOn = false
@@ -115,9 +117,9 @@ function onCellClicked(elCell, rowIdx, colIdx) {
                 elCell.classList.add('uncover-mine')
             }
             getRestartImage(LOSE)
+            stopTimer()
         }
         loseLife()
-
 
 
     } else {
@@ -129,42 +131,13 @@ function onCellClicked(elCell, rowIdx, colIdx) {
 
         elCell.classList.add('uncover')
 
-        
-        
+    }
+
+    if (!gIsfirstClicked) {
+        gIsfirstClicked = true
+        startTimer()
     }
     checkGameOver()
-
-}
-
-
-function setMinesNegsCount(board) {
-
-    for (var i = 0; i < board.length; i++) {
-        for (var j = 0; j < board[i].length; j++) {
-
-            var numOfNeighbors = countNeighbors(i, j, board)
-
-            board[i][j].minesAroundCount = numOfNeighbors
-
-
-        }
-    }
-}
-
-
-function countNeighbors(rowIdx, colIdx, mat) {
-    var neighborsCount = ''
-
-    for (var i = rowIdx - 1; i <= rowIdx + 1; i++) {
-        if (i < 0 || i >= mat.length) continue
-
-        for (var j = colIdx - 1; j <= colIdx + 1; j++) {
-            if (j < 0 || j >= mat[i].length) continue
-            if (i === rowIdx && j === colIdx) continue
-            if (mat[i][j].isMine) neighborsCount++
-        }
-    }
-    return neighborsCount
 }
 
 function onCellMarked(elCell, rowIdx, colIdx) {
@@ -189,7 +162,6 @@ function onCellMarked(elCell, rowIdx, colIdx) {
 
     if (gBoard[rowIdx][colIdx].isMarked && gBoard[rowIdx][colIdx].isMine) {
         gGame.markedCountRight++
-
     }
 
     checkGameOver()
@@ -198,9 +170,11 @@ function onCellMarked(elCell, rowIdx, colIdx) {
 
 function checkGameOver() {
 
-    if ((gGame.shownCount === ((+gLevel.SIZE) ** 2 - gLevel.MINES)) && (gGame.markedCountRight === gLevel.MINES)) {
+    if ((gGame.shownCount === ((+gLevel.SIZE) ** 2 - gLevel.MINES)) && (gGame.markedCountRight === gLevel.HIDDEN_MINES)) {
         getRestartImage(WIN)
+        stopTimer()
     }
+
 }
 
 function getRestartImage(restartBtnImage) {
@@ -236,13 +210,32 @@ function loseLife() {
 
 }
 
-function lifeElmDisplayReturn(){
-    const life1 = document.querySelector('.life1' )
-    const life2 = document.querySelector('.life2' )
-    const life3 = document.querySelector('.life3' )
+function lifeElmDisplayReturn() {
+    const life1 = document.querySelector('.life1')
+    const life2 = document.querySelector('.life2')
+    const life3 = document.querySelector('.life3')
 
     life1.classList.remove('hidden')
     life2.classList.remove('hidden')
     life3.classList.remove('hidden')
+}
+
+function startTimer() {
+    var start = Date.now()
+    var elTimer = document.querySelector('h2')
+
+    gTimer = setInterval(function () {
+        const diff = Date.now() - start
+        const secs = parseInt(diff / 1000)
+
+        var ms = (diff - secs * 1000) + ''
+        ms = ms.padStart(3, '0')
+
+        elTimer.innerText = `Time: ${secs}.${ms}s`;
+    }, 29);
+}
+
+function stopTimer() {
+    clearInterval(gTimer)
 }
 

@@ -1,20 +1,28 @@
 body {
-    background-image: url('/img/garden4.jpg');
     background-repeat: no-repeat;
-
     background-size: cover;
     background-attachment: fixed;
 
-    font-family: Copperplate, Papyrus, fantasy;
+    font-family: arial black;
     text-align: justify;
 }
 
 
 .board-container {
-    
+
     margin-left: 20vw;
-    margin-top: 25px;
-    border: 3px solid antiquewhite;;
+    margin-top: 20px;
+    border: 3px solid antiquewhite;
+    border-radius: 5%;
+    border-spacing: 7px;
+    
+    /* position: absolute;
+    top: 50;
+    left: 400px;
+    margin-left: auto;
+    margin-right: auto; */
+    
+    /* transform: translate(-50%, -50%); */
 }
 
 .board td {
@@ -24,15 +32,14 @@ body {
     font-weight: 900;
     color: #f6f7f6;
 
-    padding: 2.5px;
+    padding: 2px;
     cursor: pointer;
 
-    border: 2.5px inset rgba(12, 19, 10, 0.377);
+    border: 2.0px inset rgba(12, 19, 10, 0.377);
     
 
+
 }
-
-
 
 .uncover {
     background-color: rgb(116, 114, 111);
@@ -41,7 +48,6 @@ body {
 .uncover-mine {
     background-color: rgb(235, 57, 13);
 }
-
 
 
 footer {
@@ -74,26 +80,22 @@ footer {
     background-color: antiquewhite;
     cursor: pointer;
 
-    font-family: Copperplate, Papyrus, fantasy;
     font-size: 18px;
 
     letter-spacing: .04em;
     line-height: 16px;
 
-    margin: 10;
+    margin: 1.5px;
     padding: 10px 10px;
 
     font-weight: 1000;
 
     bottom: 800px;
-
-    
-
 }
 
 h1 {
     color: antiquewhite;
-    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 40px;
     text-align: center;
     padding: 2px;
 }
@@ -101,7 +103,6 @@ h1 {
 
 h3 {
     color: antiquewhite;
-    font-family: Copperplate, Papyrus, fantasy;
     padding: 2px;
 
     font-weight: 900;
@@ -127,44 +128,73 @@ h3 {
     font-weight: 1000;
 
     position: absolute;
-    top: 16%;
-    left: 350px;
+    top: 18%;
+    left: 400px;
     margin-left: auto;
     margin-right: auto;
     transform: translate(-50%, -50%);
 }
 
 .img-btn {
-    height: 80px; 
+    height: 80px;
 }
 
 .life1 {
-    height: 70px; 
+    height: 70px;
     position: absolute;
-    top: 13.5%;
-    left: 410px;
+    top: 15%;
+    left: 450px;
     margin-left: auto;
     margin-right: auto;
 }
 
 
 .life2 {
-    height: 70px; 
+    height: 70px;
     position: absolute;
-    top: 13.5%;
-    left: 470px;
+    top: 15%;
+    left: 510px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .life3 {
-    height: 70px; 
+    height: 70px;
     position: absolute;
-    top: 13.5%;
-    left: 530px;
+    top: 15%;
+    left: 570px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .hidden {
     display: none;
+}
+
+.wand {
+    height:55px;
+
+    position: absolute;
+    top: 30.5%;
+    left: 53px;
+    
+
+}
+
+h2 {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #277408;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+
+
+    position: absolute;
+    top: 23%;
+    left: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
 }
