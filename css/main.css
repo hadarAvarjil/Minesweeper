@@ -1,28 +1,27 @@
 body {
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     font-family: arial black;
-    text-align: justify;
+
 }
 
 
 .board-container {
-
-    margin-left: 20vw;
-    margin-top: 20px;
     border: 3px solid antiquewhite;
     border-radius: 5%;
     border-spacing: 7px;
-    
-    /* position: absolute;
-    top: 50;
-    left: 400px;
-    margin-left: auto;
-    margin-right: auto; */
-    
-    /* transform: translate(-50%, -50%); */
+
+    width: 40vh;
+    height: 50vh;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+
 }
 
 .board td {
@@ -36,7 +35,7 @@ body {
     cursor: pointer;
 
     border: 2.0px inset rgba(12, 19, 10, 0.377);
-    
+
 
 
 }
@@ -47,12 +46,13 @@ body {
 
 .uncover-mine {
     background-color: rgb(235, 57, 13);
+    padding: 0px;
 }
 
 
 footer {
 
-    position: fixed;
+    display: flex;
     bottom: 0;
     width: 100%;
 
@@ -68,6 +68,7 @@ footer {
 
 .img {
     height: 20px;
+    width: 20px;
 }
 
 .btn {
@@ -97,13 +98,13 @@ h1 {
     color: antiquewhite;
     font-size: 40px;
     text-align: center;
-    padding: 2px;
+    margin: 2px;
 }
 
 
 h3 {
     color: antiquewhite;
-    padding: 2px;
+    margin: 4.5px;
 
     font-weight: 900;
 }
@@ -111,7 +112,7 @@ h3 {
 .restart {
 
     border-radius: 42px;
-    border-width: 0;
+
 
     color: #277408;
     background-color: antiquewhite;
@@ -126,59 +127,72 @@ h3 {
     padding: 5px 5px;
 
     font-weight: 1000;
+    position: relative;
 
-    position: absolute;
-    top: 18%;
-    left: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(-50%, -50%);
+
 }
 
 .img-btn {
-    height: 80px;
+    height: 70px;
 }
 
 .life1 {
     height: 70px;
+    align-items: left;
     position: absolute;
-    top: 15%;
-    left: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    left: 20vw;
 }
 
 
 .life2 {
     height: 70px;
+    align-items: left;
+
     position: absolute;
-    top: 15%;
-    left: 510px;
-    margin-left: auto;
-    margin-right: auto;
+    left: 30vw;
+
 }
 
 .life3 {
     height: 70px;
+    align-items: left;
     position: absolute;
-    top: 15%;
-    left: 570px;
-    margin-left: auto;
-    margin-right: auto;
+    left: 10vw;
 }
 
 .hidden {
     display: none;
 }
 
-.wand {
-    height:55px;
+.wand1 {
+    height: 55px;
+    top: 350px;
+
+    align-items: left;
 
     position: absolute;
-    top: 30.5%;
-    left: 53px;
-    
+    right: 2%;
+    padding: 5px;
+}
 
+.wand2 {
+    height: 55px;
+
+    align-items: left;
+
+    position: absolute;
+    right: 2%;
+    padding: 5px;
+}
+
+.wand3 {
+    height: 55px;
+
+    align-items: left;
+
+    position: absolute;
+    right: 2%;
+    padding: 5px;
 }
 
 h2 {
@@ -190,11 +204,30 @@ h2 {
     border-radius: 20px;
     padding: 5px;
 
+    margin: 20px;
 
-    position: absolute;
-    top: 23%;
-    left: 75px;
-    margin-left: auto;
-    margin-right: auto;
     transform: translate(-50%, -50%);
 }
+
+.btn-safe{
+ 
+    padding: 0;
+    
+   
+}
+
+.safe {
+   
+    position: absolute;
+    height: 70px;
+    padding: 0%;
+    cursor: pointer;
+    right: 30%;
+    top: 23.5%;
+    
+}
+
+.cell-safe{
+    background-color: rgb(236, 203, 11);
+}
+

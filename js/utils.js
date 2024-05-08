@@ -29,3 +29,4 @@ function getClassName(position) {
     const cellClass = `cell-${position.i}-${position.j}`
     return cellClass
 }
+
