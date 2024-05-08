@@ -108,6 +108,8 @@ function onCellClicked(elCell, rowIdx, colIdx) {
         gBoard[rowIdx][colIdx].isShown = true
         gMinesLocation = randomMinesLocation(gBoard)
         setMinesNegsCount(gBoard)
+    } if (!gBoard[rowIdx][colIdx].minesAroundCount) {
+        expandShown(gBoard, elCell, clickedRowIdx, clickedColIdx)
     }
 
     if (gBoard[rowIdx][colIdx].isMine) {
@@ -139,10 +141,8 @@ function onCellClicked(elCell, rowIdx, colIdx) {
 
 
     }
-    if (!gBoard[rowIdx][colIdx].minesAroundCount) {
-        expandShown(gBoard, elCell, clickedRowIdx, clickedColIdx)
-    }
-
+   
+    console.log(gBoard[rowIdx][colIdx]);
     elCell.classList.add('uncover')
     checkGameOver()
 }
@@ -257,10 +257,10 @@ function expandShown(board, elCell, rowIdx, colIdx) {
             if (i === rowIdx && j === colIdx) continue
             if (gBoard[i][j].isShown) continue
             if (gBoard[i][j].isMine) continue
-                
+
 
             gBoard[i][j].isShown = true
-            
+
             elCell.innerText = gBoard[rowIdx][colIdx].minesAroundCount
             gGame.shownCount++
             var elCellNeg = document.querySelector(`.cell-${i}-${j}`)
@@ -313,7 +313,7 @@ function removeSafeClickDisplay(elCell) {
 function safeClickDisplayBehaver() {
 
     var elCellIdx = safeClickCellDisplay()
-    
+
     setTimeout(() => {
         removeSafeClickDisplay(elCellIdx)
     }, 500)
