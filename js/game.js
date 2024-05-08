@@ -23,6 +23,7 @@ var gIsfirstClicked = true
 function onInit() {
 
     getRestartImage(NORMAL)
+    gIsfirstClicked = true
 
     gGame = {
         isOn: true,
@@ -34,7 +35,6 @@ function onInit() {
     gLevel.HIDDEN_MINES = gLevel.MINES
 
     clearInterval(gTimer)
-    gIsfirstClicked = true
     document.querySelector('h2').innerText = `Time: ${0}s`
 
     lifeElmDisplayReturn()
@@ -256,8 +256,11 @@ function expandShown(board, elCell, rowIdx, colIdx) {
             if (j < 0 || j >= board[i].length) continue
             if (i === rowIdx && j === colIdx) continue
             if (gBoard[i][j].isShown) continue
+            if (gBoard[i][j].isMine) continue
+                
 
             gBoard[i][j].isShown = true
+            
             elCell.innerText = gBoard[rowIdx][colIdx].minesAroundCount
             gGame.shownCount++
             var elCellNeg = document.querySelector(`.cell-${i}-${j}`)

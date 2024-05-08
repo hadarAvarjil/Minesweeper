@@ -70,8 +70,8 @@ function gameLevel(btnNum) {
         case begginnerLevel:
 
             gLevel.SIZE = 4
-            gLevel.MINES = 4
-            gLevel.HIDDEN_MINES = 4
+            gLevel.MINES = 5
+            gLevel.HIDDEN_MINES = 5
 
             elHeading.innerText = 'Game Level: Begginner'
 

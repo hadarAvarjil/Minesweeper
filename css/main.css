@@ -133,7 +133,7 @@ h3 {
 }
 
 .img-btn {
-    height: 70px;
+    height: 50px;
 }
 
 .life1 {
@@ -219,8 +219,9 @@ h2 {
 .safe {
    
     position: absolute;
-    height: 70px;
+    height: 50px;
     padding: 0%;
+    margin: 10px;
     cursor: pointer;
     right: 30%;
     top: 23.5%;
