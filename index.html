@@ -21,9 +21,17 @@
     <div class="timer">
         <h2>Time:</h2>
     </div>
+
     <button type="button" onclick="safeClickDisplayBehaver()" class="btn-safe">
         <img src="img/safe2.png" class="safe" >
     </button>
+    <h4>3 Clicks Available</h4>
+
+    <button  type="button" onclick="isHint()" class="btn-wand">
+        <img src="img/magic-wand.png" class="wand">
+    </button>
+    <h5>3 Clicks Available</h5>
+
     
     <div class="life">
         <img src="img/life.png" class="life1">
@@ -34,16 +42,14 @@
     <button onclick="onInit()" class="restart">
         <img src="img/Normal.png" class="img-btn">
     </button>
-
+    
    
 
     <table class="board-container">
         <tbody class="board"></tbody>
     </table>
     
-    <img src="img/magic-wand.png" class="wand1">
-    <img src="img/magic-wand.png" class="wand2">
-    <img src="img/magic-wand.png" class="wand3">
+
 
     <script src="js/utils.js"></script>
     <script src="js/game.js"></script>

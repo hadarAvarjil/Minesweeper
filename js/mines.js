@@ -73,7 +73,7 @@ function gameLevel(btnNum) {
             gLevel.MINES = 5
             gLevel.HIDDEN_MINES = 5
 
-            elHeading.innerText = 'Game Level: Begginner'
+            elHeading.innerText = 'Game Level: Begginner, 5 Mines'
 
             break;
         case mediumLevel:
@@ -82,7 +82,7 @@ function gameLevel(btnNum) {
             gLevel.MINES = 14
             gLevel.HIDDEN_MINES = 14
 
-            elHeading.innerText = 'Game Level: Medium'
+            elHeading.innerText = 'Game Level: Medium, 14 Mines'
 
             break;
         case expertLevel:
@@ -91,7 +91,7 @@ function gameLevel(btnNum) {
             gLevel.MINES = 32
             gLevel.HIDDEN_MINES = 32
 
-            elHeading.innerText = 'Game Level: Expert'
+            elHeading.innerText = 'Game Level: Expert, 32 Mines'
 
             break;
     }
