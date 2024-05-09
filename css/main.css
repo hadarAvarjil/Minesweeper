@@ -141,7 +141,7 @@ h3 {
     height: 50px;
     align-items: left;
     position: absolute;
-    left: 2vw;
+    left: 1%;
 }
 
 
@@ -150,7 +150,7 @@ h3 {
     align-items: left;
 
     position: absolute;
-    left: 11vw;
+    left: 10%;
 
 }
 
@@ -158,7 +158,7 @@ h3 {
     height: 50px;
     align-items: left;
     position: absolute;
-    left: 19vw;
+    left: 19%;
 }
 
 .hidden {
@@ -183,7 +183,7 @@ h2 {
 h4 {
     color: rgb(8, 8, 7);
     position: absolute;
-    right: 9vh;
+    right: 5%;
     text-align: right;
     margin: 2px;
     top: 22vh;
@@ -204,7 +204,7 @@ h4 {
     padding: 0%;
     margin: 10px;
     cursor: pointer;
-    right: 19vh;
+    right: 20%;
     top: 17.5vh;
 
 }
@@ -226,8 +226,8 @@ h4 {
     padding: 0px;
     margin: 10px;
     cursor: pointer;
-    right: 19vh;
-    top: 24vh;
+    right: 20%;
+    top: 24%;
 
 }
 
@@ -235,7 +235,7 @@ h4 {
 h5 {
     color: rgb(8, 8, 8);
     position: absolute;
-    right: 9vh;
+    right: 5%;
     text-align: right;
     margin: 2px;
     top: 270px;

@@ -326,7 +326,7 @@ function safeClickDisplayBehaver() {
 }
 
 function numSafeClickRemainDisplay(num) {
-    document.querySelector('h4').innerText = `${num} Clicks Available`
+    document.querySelector('h4').innerText = `${num} Left`
 }
 
 function isHint() {
@@ -384,7 +384,7 @@ function hintDisplayBehaver(elCell, rowIdx, colIdx) {
 }
 
 function numHintsClicksRemainDisplay(num) {
-    document.querySelector('h5').innerText = `${num} Clicks Available`
+    document.querySelector('h5').innerText = `${num} Left`
 }
 
 function removeHintDisplay(elCell, hintCellsIdx) {
