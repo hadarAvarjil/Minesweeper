@@ -67,36 +67,36 @@ footer {
 .btn {
     background-color: antiquewhite;
     border-radius: 42px;
-    border-width: 0;
+    border-width: 2px;
     color: #277408;
     cursor: pointer;
 
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 1000;
     letter-spacing: .04em;
     line-height: 16px;
 
     margin: 1.5px;
-    padding: 10px;
+    padding: 5px;
 }
 
 h1 {
     color: antiquewhite;
     font-size: 40px;
     text-align: center;
-    margin: 2px;
+    margin: 0.5px;
 }
 
 h2 {
-    width: 35%;
+    width: 45%;
     align-items: center;
-    background-color: antiquewhite;
-    color: #277408;
-    font-size: 18px;
+    
+    color:  antiquewhite;
+    font-size: 16px;
     border-radius: 20px;
-    padding: 2px;
+    padding: 1px;
     position: relative;
-    margin: 10px;
+    margin: 2px;
     left: 30%;
 
 }
@@ -108,26 +108,28 @@ h3 {
 }
 
 h4 {
-    color: rgb(8, 8, 7);
-    margin: 1px;
+    color: antiquewhite;
+    
     position: absolute;
-    top: 220px;
-    left: 65%;
+    top: 190px;
+    left: 56%;
+    letter-spacing: 0.1em;
+    font-size: 12px
 }
 
 h5 {
     position: absolute;
-    top: 220px;
+    top: 185px;
     right: 60px;
-    color: rgb(8, 8, 8);
-    left: 75%;
-    margin: 2px;
-    font-size: 16px
+    color: antiquewhite;
+    letter-spacing: 0.1em;
+    left: 70%;
+    font-size: 12px
 }
 
 .restart {
     position: absolute;
-    left: 45%;
+    left: 37%;
     margin: 1.5px;
     border-radius: 42px;
     background-color: antiquewhite;
@@ -169,11 +171,11 @@ h5 {
 .btn-safe {
     margin: 1px;
     position: absolute;
-    top: 174px;
-    left: 61%;
+    top: 160px;
+    left: 56%;
     border-radius: 42px;
     background-color: antiquewhite;
-    padding: 1%;
+    padding: 4px;
 }
 
 .safe {
@@ -193,8 +195,8 @@ h5 {
     padding: 1%;
     margin: 1px;
     position: absolute;
-    top: 174px;
-    left: 75%;
+    top: 160px;
+    left: 74%;
 }
 
 .wand {

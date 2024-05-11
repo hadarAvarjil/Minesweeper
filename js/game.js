@@ -374,7 +374,7 @@ function hintDisplayBehaver(elCell, rowIdx, colIdx) {
 
     setTimeout(() => {
         removeHintDisplay(elCell, hintCellsIdx)
-    }, 2500)
+    }, 1500)
 }
 
 function numHintsClicksRemainDisplay(num) {
