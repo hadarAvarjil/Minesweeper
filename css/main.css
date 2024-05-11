@@ -2,46 +2,43 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin: 0;
     font-family: arial black;
-
+    
 }
 
 
-.board-container {
-    border: 3px solid antiquewhite;
-    border-radius: 5%;
-    border-spacing: 7px;
+.container {
+    text-align: center;
+}
 
-    width: 40vh;
-    height: 50vh;
-    margin: 20px auto;
-    border-radius: 20px;
-    overflow: hidden;
-
+.board-container{
+    margin: 20px;
+    position: relative;
+    top: 70px;
 }
 
 .board td {
+    border: 15%;
+    border-radius: 5%;
+    border-spacing: 7px;
+    margin: 10%;
+    border-radius: 15px;
     width: 30px;
     height: 30px;
     text-align: center;
     font-weight: 900;
-    color: #f6f7f6;
-
     padding: 2px;
     cursor: pointer;
-
-    border: 2.0px inset rgba(12, 19, 10, 0.377);
-
-
-
+    border: 5px inset rgba(12, 19, 10, 0.377);
 }
 
 .uncover {
-    background-color: rgb(116, 114, 111);
+    background-color: rgb(201, 186, 164);
 }
 
 .uncover-mine {
@@ -51,19 +48,15 @@ body {
 
 
 footer {
-
-    display: flex;
     bottom: 0;
     width: 100%;
-
+    margin: 55px;
     padding: 5px;
     background-color: rgba(176, 196, 222, 0.467);
+    position: relative;
 
     font-size: 20px;
     text-align: center;
-
-    display: block;
-    unicode-bidi: isolate;
 }
 
 .img {
@@ -72,26 +65,19 @@ footer {
 }
 
 .btn {
-    align-items: center;
-
+    background-color: antiquewhite;
     border-radius: 42px;
     border-width: 0;
-
     color: #277408;
-    background-color: antiquewhite;
     cursor: pointer;
 
     font-size: 18px;
-
+    font-weight: 1000;
     letter-spacing: .04em;
     line-height: 16px;
 
     margin: 1.5px;
-    padding: 10px 10px;
-
-    font-weight: 1000;
-
-    bottom: 800px;
+    padding: 10px;
 }
 
 h1 {
@@ -101,36 +87,53 @@ h1 {
     margin: 2px;
 }
 
+h2 {
+    width: 35%;
+    align-items: center;
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #277408;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 2px;
+    position: relative;
+    margin: 10px;
+    left: 30%;
+
+}
 
 h3 {
     color: antiquewhite;
     margin: 1px;
-
     font-weight: 900;
 }
 
+h4 {
+    color: rgb(8, 8, 7);
+    margin: 1px;
+    position: absolute;
+    top: 230px;
+    left: 63%;
+}
+
+h5 {
+    position: absolute;
+    top: 230px;
+    right: 60px;
+    color: rgb(8, 8, 8);
+    left: 75%;
+    margin: 2px;
+    font-size: 16px
+}
+
 .restart {
-
+    position: absolute;
+    left: 45%;
+    margin: 1.5px;
     border-radius: 42px;
-
-
-    color: #277408;
     background-color: antiquewhite;
     cursor: pointer;
-
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 18px;
-
-    letter-spacing: .04em;
-    line-height: 16px;
-
-    padding: 5px 5px;
-
-    font-weight: 1000;
-    position: relative;
-    right:  7vw;
-
-
+    padding: 1% ;
 }
 
 .img-btn {
@@ -139,26 +142,24 @@ h3 {
 
 .life1 {
     height: 50px;
-    align-items: left;
+    margin: 2px;
     position: absolute;
-    left: 1%;
+    left: 5%;
 }
 
 
 .life2 {
     height: 50px;
-    align-items: left;
-
+    margin: 2px;
     position: absolute;
-    left: 10%;
-
+    left: 15%;
 }
 
 .life3 {
     height: 50px;
-    align-items: left;
+    margin: 2px;
     position: absolute;
-    left: 19%;
+    left: 25%;
 }
 
 .hidden {
@@ -166,83 +167,42 @@ h3 {
 }
 
 
-h2 {
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #277408;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 20px;
-    padding: 5px;
-
-    margin: 20px;
-
-    transform: translate(-50%, -50%);
-}
-
-h4 {
-    color: rgb(8, 8, 7);
-    position: absolute;
-    right: 5%;
-    text-align: right;
-    margin: 2px;
-    top: 22vh;
-
-}
-
 .btn-safe {
-
-    padding: 0;
-
-
+    margin: 1px;
+    position: absolute;
+    top: 174px;
+    left: 61%;
+    border-radius: 42px;
+    background-color: antiquewhite;
+    padding: 1%;
 }
 
 .safe {
-
-    position: absolute;
     height: 35px;
-    padding: 0%;
-    margin: 10px;
+    /* padding: 2%; */
     cursor: pointer;
-    right: 20%;
-    top: 17.5vh;
-
+  
 }
 
 .cell-safe {
-    background-color: rgb(236, 203, 11);
+    background-color: rgb(206, 190, 52);
 }
 
-.btn-wand{
-    padding: 0;
+.btn-wand {
+    border-radius: 42px;
+    background-color: antiquewhite;
+    padding: 1%;
+    margin: 1px;
+    position: absolute;
+    top: 174px;
+    left: 75%;
 }
 
 .wand {
-
-    position: absolute;
     height: 35px;
-    top: 350px;
-
-    padding: 0px;
-    margin: 10px;
     cursor: pointer;
-    right: 20%;
-    top: 24%;
-
-}
-
-
-h5 {
-    color: rgb(8, 8, 8);
-    position: absolute;
-    right: 5%;
-    text-align: right;
-    margin: 2px;
-    top: 270px;
-    font-size: 16px
-
 }
 
 .hint {
-    background-color: rgb(7, 102, 19);
+    background-color: rgb(101, 179, 111);
 }

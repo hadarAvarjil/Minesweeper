@@ -10,51 +10,46 @@
 
 <body background="img/garden2.jpg" onload="onInit()">
 
-    <h1>Minesweeper</h1>
-    <div class="gameOption">
+    <div class="container">
+
+        <h1>Minesweeper</h1>
+
         <h3>Game Level: Medium, 14 Mines</h3>
         <button class="btn" data-btn-size="4" onclick="gameLevel(this)">Beginner</button>
         <button class="btn" data-btn-size="8" onclick="gameLevel(this)">Medium</button>
         <button class="btn" data-btn-size="12" onclick="gameLevel(this)">Expert</button>
-    </div>
 
-    <div class="timer">
         <h2>Time:</h2>
-    </div>
 
-    <button type="button" onclick="safeClickDisplayBehaver()" class="btn-safe">
-        <img src="img/safe2.png" class="safe" >
-    </button>
-    <h4>3 Left</h4>
-
-    <button  type="button" onclick="isHint()" class="btn-wand">
-        <img src="img/magic-wand.png" class="wand">
-    </button>
-    <h5>3 Left</h5>
-
-    
-    <div class="life">
         <img src="img/life.png" class="life1">
         <img src="img/life.png" class="life2">
         <img src="img/life.png" class="life3">
+
+
+        <button onclick="onInit()" class="restart">
+            <img src="img/Normal.png" class="img-btn">
+        </button>
+
+        <button onclick="safeClickDisplayBehaver()" class="btn-safe">
+            <img src="img/safe2.png" class="safe">
+        </button>
+        <h4>3 Left</h4>
+
+        <button onclick="isHint()" class="btn-wand">
+            <img src="img/magic-wand.png" class="wand">
+        </button>
+        <h5>3 Left</h5>
+
+
+        <table class= "board-container" >
+            <tbody class="board"></tbody>
+        </table>
+
+        <script src="js/utils.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/mines.js"></script>
+
     </div>
-
-    <button onclick="onInit()" class="restart">
-        <img src="img/Normal.png" class="img-btn">
-    </button>
-    
-   
-
-    <table class="board-container">
-        <tbody class="board"></tbody>
-    </table>
-    
-
-
-    <script src="js/utils.js"></script>
-    <script src="js/game.js"></script>
-    <script src="js/mines.js"></script>
-
 </body>
 
 <footer>Hadar Avarjil</footer>
