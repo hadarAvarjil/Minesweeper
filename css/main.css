@@ -23,18 +23,16 @@ body {
 }
 
 .board td {
-    border: 15%;
     border-radius: 5%;
     border-spacing: 7px;
-    margin: 10%;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 30px;
     height: 30px;
     text-align: center;
     font-weight: 900;
     padding: 2px;
     cursor: pointer;
-    border: 5px inset rgba(12, 19, 10, 0.377);
+    border: 3px inset rgba(73, 82, 71, 0.377);
 }
 
 .uncover {
@@ -60,8 +58,8 @@ footer {
 }
 
 .img {
-    height: 20px;
-    width: 20px;
+    height: 14px;
+    width: 15px;
 }
 
 .btn {
