@@ -320,7 +320,7 @@ function safeClickDisplayBehaver() {
 }
 
 function numSafeClickRemainDisplay(num) {
-    document.querySelector('h4').innerText = `${num} Left`
+    document.querySelector('h4').innerText = `${num}/3`
 }
 
 function isHint() {
@@ -378,7 +378,7 @@ function hintDisplayBehaver(elCell, rowIdx, colIdx) {
 }
 
 function numHintsClicksRemainDisplay(num) {
-    document.querySelector('h5').innerText = `${num} Left`
+    document.querySelector('h5').innerText = `${num}/3`
 }
 
 function removeHintDisplay(elCell, hintCellsIdx) {
