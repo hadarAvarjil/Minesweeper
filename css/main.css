@@ -2,14 +2,14 @@
     --clr-main: rgb(231, 205, 171);
     --clr-hint-background: rgba(101, 179, 111, 0.644);
     --clr-safe-background: rgba(206, 191, 52, 0.548);
-
+    
 }
 
 
 body {
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: cursive;
+    font-family: "Gill Sans", sans-serif;
 }
 
 
@@ -53,10 +53,10 @@ body {
 
 
 footer {
-
+    
     padding: 5px;
     background-color: rgba(176, 196, 222, 0.467);
-
+    
     font-size: 20px;
     text-align: center;
 }
@@ -72,13 +72,13 @@ footer {
     border-width: 2px;
     color: #277408;
     cursor: pointer;
-
+    
     font-size: 16px;
     font-weight: 1000;
     letter-spacing: .02em;
     line-height: 16px;
     font-family: cursive;
-
+    
     margin: 1.5px;
     padding: 5px;
 }
@@ -92,7 +92,7 @@ h1 {
 h2 {
     width: 45%;
     align-items: center;
-
+    
     color: var(--clr-main);
     font-size: 1.5rem;
     border-radius: 20px;
@@ -101,12 +101,11 @@ h2 {
     margin: 2px;
     left: 30%;
     -webkit-text-stroke: 1px rgb(1, 2, 1);
-
+    
 }
 
 h3 {
     color: rgba(250, 235, 215, 0.733);
-    background-color: rgba(89, 211, 73, 0.467);
     margin: 1px;
     font-size: 1.50rem;
     
@@ -114,22 +113,26 @@ h3 {
 }
 
 h4 {
-    color: var(--clr-main);
-
+    color: white;
+    background-color: rgba(89, 211, 73, 0.467);
+    border-radius: 10px;
+    padding: 0.5px;
+    
     top: 210px;
     left: 65%;
-    font-size: 15px;
-    -webkit-text-stroke: 0.5px rgb(1, 2, 1);
+    font-size: 16px;
     position: absolute;
     margin: 0;
 }
 
 h5 {
     top: 210px;
-    color: var(--clr-main);
-    -webkit-text-stroke: 0.5px rgb(1, 2, 1);
+    color: white;
+    background-color: rgba(89, 211, 73, 0.467);
     left: 80%;
-    font-size: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 0.5px;
     position: absolute;
     margin: 0;
 }
