@@ -1,15 +1,15 @@
 :root {
-    --clr-main: rgb(231, 205, 171);
+    --clr-main: rgba(250, 235, 215, 0.938);
     --clr-hint-background: rgba(101, 179, 111, 0.644);
     --clr-safe-background: rgba(206, 191, 52, 0.548);
-    
+
 }
 
 
 body {
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Gill Sans", sans-serif;
+    font-family: arial black;
 }
 
 
@@ -39,7 +39,7 @@ body {
     padding: 1px;
     cursor: pointer;
     border: 2px inset var(--clr-main);
-    margin: 1px;
+    margin: 7px;
 }
 
 .uncover {
@@ -53,10 +53,10 @@ body {
 
 
 footer {
-    
+
     padding: 5px;
     background-color: rgba(176, 196, 222, 0.467);
-    
+
     font-size: 20px;
     text-align: center;
 }
@@ -72,13 +72,12 @@ footer {
     border-width: 2px;
     color: #277408;
     cursor: pointer;
-    
+
     font-size: 16px;
     font-weight: 1000;
     letter-spacing: .02em;
     line-height: 16px;
-    font-family: cursive;
-    
+
     margin: 1.5px;
     padding: 5px;
 }
@@ -92,51 +91,46 @@ h1 {
 h2 {
     width: 45%;
     align-items: center;
-    
+
     color: var(--clr-main);
-    font-size: 1.5rem;
+    font-size: 16px;
     border-radius: 20px;
     padding: 1px;
     position: relative;
     margin: 2px;
     left: 30%;
-    -webkit-text-stroke: 1px rgb(1, 2, 1);
-    
+
 }
 
 h3 {
-    color: rgba(250, 235, 215, 0.733);
+    color:  rgba(250, 235, 215, 0.733);
+    background-color: rgba(89, 211, 73, 0.467);
     margin: 1px;
-    font-size: 1.50rem;
-    
-    -webkit-text-stroke: 1px rgb(1, 2, 1);font-weight: 900;
+    font-weight: 900;
 }
 
 h4 {
-    color: white;
-    background-color: rgba(89, 211, 73, 0.467);
-    border-radius: 10px;
-    padding: 0.5px;
-    
-    top: 210px;
-    left: 65%;
-    font-size: 16px;
+    color: var(--clr-main);
+
+    top: 200px;
+    left: 62%;
+    font-size: 13px;
+    margin: 1px;
+
     position: absolute;
-    margin: 0;
+
 }
 
 h5 {
-    top: 210px;
-    color: white;
-    background-color: rgba(89, 211, 73, 0.467);
-    left: 80%;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 0.5px;
+    top: 200px;
+    left: 47%;
+    color: var(--clr-main);
+    letter-spacing: 0.1em;
+    left: 78%;
+    font-size: 13px;
     position: absolute;
-    margin: 0;
+    margin: 1px;
 }
-
 
 .restart {
     margin: auto;
@@ -197,14 +191,15 @@ h5 {
 }
 
 .btn-wand {
-    
+
     position: absolute;
     margin: auto;
     padding: 1%;
     border-radius: 42px;
-    left: 80%;
     cursor: pointer;
 
+    position: absolute;
+    left: 80%;
 
     background-color: var(--clr-main);
 }
