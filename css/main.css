@@ -77,6 +77,7 @@ footer {
     font-weight: 1000;
     letter-spacing: .02em;
     line-height: 16px;
+    font-family: cursive;
 
     margin: 1.5px;
     padding: 5px;
@@ -93,7 +94,7 @@ h2 {
     align-items: center;
 
     color: var(--clr-main);
-    font-size: 1rem;
+    font-size: 1.5rem;
     border-radius: 20px;
     padding: 1px;
     position: relative;
@@ -115,22 +116,21 @@ h3 {
 h4 {
     color: var(--clr-main);
 
-    top: 235px;
+    top: 260px;
     left: 60%;
-    font-size: 1rem;
-    -webkit-text-stroke: 1px rgb(1, 2, 1);
+    font-size: 15px;
+    -webkit-text-stroke: 0.5px rgb(1, 2, 1);
     position: absolute;
     margin: 0;
-
 }
 
 h5 {
-    top: 235px;
-    left: 46%;
+    top: 260px;
+    left: 50%;
     color: var(--clr-main);
-    -webkit-text-stroke: 1px rgb(1, 2, 1);
+    -webkit-text-stroke: 0.5px rgb(1, 2, 1);
     left: 78%;
-    font-size: 1rem;
+    font-size: 15px;
     position: absolute;
     margin: 0;
 }
