@@ -1,69 +1,73 @@
+:root {
+    --clr-main: rgba(250, 235, 215, 0.938);
+    --clr-hint-background: rgba(101, 179, 111, 0.644);
+    --clr-safe-background: rgba(206, 191, 52, 0.548);
+
+}
+
+
 body {
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
     font-family: arial black;
-    
 }
 
 
 .container {
     text-align: center;
+    max-width: 550px;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    border: 10px inset var(--clr-main);
+    overflow: hidden;
 }
 
-.board-container{
-    margin: 20px;
+.board-container {
+    padding: 4px;
+    margin: 60px auto;
     position: relative;
-    top: 70px;
+    top: 22px;
 }
 
 .board td {
-    border-radius: 5%;
-    border-spacing: 7px;
     border-radius: 10px;
     width: 30px;
     height: 30px;
     text-align: center;
     font-weight: 900;
-    padding: 2px;
+    padding: 1px;
     cursor: pointer;
-    border: 3px inset rgba(73, 82, 71, 0.377);
+    border: 2px inset var(--clr-main);
+    margin: 7px;
 }
 
 .uncover {
-    background-color: rgb(201, 186, 164);
+    background-color: var(--clr-main);
 }
 
 .uncover-mine {
-    background-color: rgb(235, 57, 13);
+    background-color: rgba(248, 16, 16, 0.973);
     padding: 0px;
 }
 
 
 footer {
-    bottom: 0;
-    width: 100%;
-    margin: 55px;
+
     padding: 5px;
     background-color: rgba(176, 196, 222, 0.467);
-    position: relative;
 
     font-size: 20px;
     text-align: center;
 }
 
 .img {
-    height: 14px;
-    width: 15px;
+    height: 26px;
+    width: 21px;
 }
 
 .btn {
-    background-color: antiquewhite;
+    background-color: var(--clr-main);
     border-radius: 42px;
     border-width: 2px;
     color: #277408;
@@ -71,7 +75,7 @@ footer {
 
     font-size: 16px;
     font-weight: 1000;
-    letter-spacing: .04em;
+    letter-spacing: .02em;
     line-height: 16px;
 
     margin: 1.5px;
@@ -79,7 +83,6 @@ footer {
 }
 
 h1 {
-    color: antiquewhite;
     font-size: 40px;
     text-align: center;
     margin: 0.5px;
@@ -88,8 +91,8 @@ h1 {
 h2 {
     width: 45%;
     align-items: center;
-    
-    color:  antiquewhite;
+
+    color: var(--clr-main);
     font-size: 16px;
     border-radius: 20px;
     padding: 1px;
@@ -100,48 +103,51 @@ h2 {
 }
 
 h3 {
-    color: antiquewhite;
+    color:  rgba(250, 235, 215, 0.733);
+    background-color: rgba(89, 211, 73, 0.467);
     margin: 1px;
     font-weight: 900;
 }
 
 h4 {
-    color: antiquewhite;
-    
+    color: var(--clr-main);
+
+    top: 200px;
+    left: 62%;
+    font-size: 13px;
+    margin: 1px;
+
     position: absolute;
-    top: 190px;
-    left: 56%;
-    letter-spacing: 0.1em;
-    font-size: 12px
+
 }
 
 h5 {
-    position: absolute;
-    top: 185px;
-    right: 60px;
-    color: antiquewhite;
+    top: 200px;
+    left: 47%;
+    color: var(--clr-main);
     letter-spacing: 0.1em;
-    left: 70%;
-    font-size: 12px
+    left: 78%;
+    font-size: 13px;
+    position: absolute;
+    margin: 1px;
 }
 
 .restart {
-    position: absolute;
-    left: 37%;
-    margin: 1.5px;
+    margin: auto;
     border-radius: 42px;
-    background-color: antiquewhite;
+    background-color: var(--clr-main);
     cursor: pointer;
-    padding: 1% ;
+    padding: 1%;
+    position: absolute;
+    left: 45%;
 }
 
 .img-btn {
-    height: 50px;
+    height: 40px;
 }
 
 .life1 {
     height: 50px;
-    margin: 2px;
     position: absolute;
     left: 5%;
 }
@@ -149,16 +155,14 @@ h5 {
 
 .life2 {
     height: 50px;
-    margin: 2px;
     position: absolute;
-    left: 15%;
+    left: 17%;
 }
 
 .life3 {
     height: 50px;
-    margin: 2px;
     position: absolute;
-    left: 25%;
+    left: 28%;
 }
 
 .hidden {
@@ -167,41 +171,43 @@ h5 {
 
 
 .btn-safe {
-    margin: 1px;
     position: absolute;
-    top: 160px;
-    left: 56%;
+    margin: auto;
     border-radius: 42px;
-    background-color: antiquewhite;
-    padding: 4px;
+    background-color: var(--clr-main);
+    cursor: pointer;
+    padding: 1%;
+    position: absolute;
+    left: 64%;
 }
 
 .safe {
-    height: 25px;
-    /* padding: 2%; */
-    cursor: pointer;
-  
+    height: 30px;
+
 }
 
 .cell-safe {
-    background-color: rgb(206, 190, 52);
+    background-color: rgba(206, 191, 52, 0.548);
 }
 
 .btn-wand {
-    border-radius: 42px;
-    background-color: antiquewhite;
-    padding: 1%;
-    margin: 1px;
+
     position: absolute;
-    top: 160px;
-    left: 74%;
+    margin: auto;
+    padding: 1%;
+    border-radius: 42px;
+    cursor: pointer;
+
+    position: absolute;
+    left: 80%;
+
+    background-color: var(--clr-main);
 }
 
 .wand {
-    height: 25px;
-    cursor: pointer;
+    height: 30px;
 }
 
 .hint {
-    background-color: rgb(101, 179, 111);
+    background-color: var(--clr-hint-background)
 }
