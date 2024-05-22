@@ -1,5 +1,5 @@
 :root {
-    --clr-main: rgba(250, 235, 215, 0.938);
+    --clr-main: rgb(231, 205, 171);
     --clr-hint-background: rgba(101, 179, 111, 0.644);
     --clr-safe-background: rgba(206, 191, 52, 0.548);
 
@@ -9,7 +9,7 @@
 body {
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: arial black;
+    font-family: cursive;
 }
 
 
@@ -39,7 +39,7 @@ body {
     padding: 1px;
     cursor: pointer;
     border: 2px inset var(--clr-main);
-    margin: 7px;
+    margin: 1px;
 }
 
 .uncover {
@@ -93,44 +93,48 @@ h2 {
     align-items: center;
 
     color: var(--clr-main);
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 20px;
     padding: 1px;
     position: relative;
     margin: 2px;
     left: 30%;
+    -webkit-text-stroke: 1px rgb(1, 2, 1);
 
 }
 
 h3 {
-    color:  rgba(250, 235, 215, 0.733);
+    color: rgba(250, 235, 215, 0.733);
     background-color: rgba(89, 211, 73, 0.467);
     margin: 1px;
-    font-weight: 900;
+    font-size: 1.50rem;
+    
+    -webkit-text-stroke: 1px rgb(1, 2, 1);font-weight: 900;
 }
 
 h4 {
     color: var(--clr-main);
 
-    top: 200px;
-    left: 62%;
-    font-size: 13px;
-    margin: 1px;
-
+    top: 235px;
+    left: 60%;
+    font-size: 1rem;
+    -webkit-text-stroke: 1px rgb(1, 2, 1);
     position: absolute;
+    margin: 0;
 
 }
 
 h5 {
-    top: 200px;
-    left: 47%;
+    top: 235px;
+    left: 46%;
     color: var(--clr-main);
-    letter-spacing: 0.1em;
+    -webkit-text-stroke: 1px rgb(1, 2, 1);
     left: 78%;
-    font-size: 13px;
+    font-size: 1rem;
     position: absolute;
-    margin: 1px;
+    margin: 0;
 }
+
 
 .restart {
     margin: auto;
@@ -191,15 +195,14 @@ h5 {
 }
 
 .btn-wand {
-
+    
     position: absolute;
     margin: auto;
     padding: 1%;
     border-radius: 42px;
+    left: 80%;
     cursor: pointer;
 
-    position: absolute;
-    left: 80%;
 
     background-color: var(--clr-main);
 }
